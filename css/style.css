@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato&display=swap');
+/* LAYOUT */
+*{
+    font-family: 'Lato', sans-serif;
+}
+h1{
+    font-family: 'Fredoka One', cursive;
+    color: #0e4046;
+}
+body {
+    display: flex;
+}
+.panel {
+    height: 100vh;
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#left-panel {
+    background-color: #F5D5E4;
+}
+
+#right-panel {
+    background-color: #E66579;
+}
+
+#canvas-container {
+    border: 1px solid #0e4046;
+    margin-bottom: 10px;
+}
+/* DROPZONE */
+#dropzone {
+    width: 320px;
+    height: 80px;
+    border: 1px dashed #0e4046;
+    
+    color: #0e4046;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dropzone.dragover {
+    background-color: rgba(255, 255, 255, 0.452);
+}
+/* DOWNLOAD BUTTON */
+#download-button{
+    color: #0e4046;
+    width: 320px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #FCC0C5;
+    
+    cursor: pointer;
+}
+
+#download-button:hover{
+    background-color: #fcc4d3;
+}
+
+/* PRESET SELECT */
+#preset-select{
+    margin-top: 10px;
+}
+
+/* EXTRA SETTINGS */
+#extra-settings{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#extra-settings p, #extra-settings label{
+    margin: 0;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+#color-box{
+    height: 40px;
+    width : 40px;
+    margin-bottom: 10px;
+    background-color : white;
+    border: 1px solid #0e4046;
+}
