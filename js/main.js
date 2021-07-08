@@ -111,10 +111,14 @@ downloadButton.click(function(){
 
 colorBox.click(function(){
     isSelectingColor = true;
+    $("body").addClass("picking-color");
 });
 
 function mouseClicked(){
-    if (mouseInCanvas()) isSelectingColor = false
+    if (mouseInCanvas()){
+        isSelectingColor = false;
+        $("body").removeClass("picking-color");
+    } 
 }
 function mouseInCanvas(){
     if(mouseX >= 0 && mouseX <= width && mouseY >= 0 && mouseY <= height) return true;

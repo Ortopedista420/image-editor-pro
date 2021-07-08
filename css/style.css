@@ -9,6 +9,10 @@ h1{
 }
 body {
     display: flex;
+    
+}
+.picking-color {
+    cursor: url(../assets/colorpicker.cur), pointer;
 }
 .panel {
     height: 100vh;
